@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/tableContent.css">
+    <link rel="stylesheet" href="css/modalDialog.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <title>Аэропорт Стригино</title>
+</head>
+
+<body>         
+        <div id="container" class="tableContainer">
+           
+            <div class="headerTable">
+                <table cellspacing="0">
+                    <tr class="table-header">
+                        <th class="type_cell">Тип</br>рейса</th>
+                        <th class="number_cell">Номер</br>рейса</th>
+                        <th class="company_cell">Авиакомпания</th>
+                        <th class="companyLogo_cell"> </th>
+                        <th class="aircraft_cell">Тип воздушного</br>судна</th>
+                        <th class="destination_cell">Аэропорт</br>назначения</th>
+                        <th class="schedule_cell">Плановое</br>время</th>
+                        <th class="status_cell">Статус</br>рейса</th>
+                        <th class="description_cell">Примечание</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="scrollbox">
+                <div id="content">
+                        
+                            <input type="radio" class="checkboxDepart" name="alte" checked>
+                            <input type="radio" class="checkboxArriv" name="alte"/>
+                    <table cellspacing="0" class="tableAirport tableArrive">
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00007'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">GH1216</td>
+                            <td class="company_cell">Глобус</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/globus_logo.jpeg" alt="глобус" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>738</td>
+                            <td class="destination_cell">Москва Домодедово (DME)</td>
+                            <td class="schedule_cell">0:07</td>
+                            <td class="status_cell status_departed"> <small>00:09</small>
+                            </td>
+                            <td class="description_cell">VP-BQD</td>
+                        </tr> 
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00330'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">LH1465</td>
+                            <td class="company_cell">Lufthansa</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/Lufthansa_logo.svg" alt="Lufthansa" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                            <td class="destination_cell">Франкфурт(FRA)</td>
+                            <td class="schedule_cell">3:30</td>
+                            <td class="status_cell status_departed"> <small>03:30</small>
+                            </td>
+                            <td class="description_cell">D-AILF</td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00355'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">AY162</td>
+                            <td class="company_cell">Finnair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/FIN_logo.png" alt="Finnair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Embraer"></span>190</td>
+                            <td class="destination_cell">Хельсинки(HEL)</td>
+                            <td class="schedule_cell">3:55</td>
+                            <td class="status_cell status_departed"> <small>03:55</small>
+                            </td>
+                            <td class="description_cell">OH-LKP</td>
+                        </tr>                        
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00505'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">SU1223</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">5:05</td>
+                            <td class="status_cell status_departed"> <small>05:24</small>
+                            </td>
+                            <td class="description_cell">VP-BWD</td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00730'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">UT160</td>
+                            <td class="company_cell">UTair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                            <td class="destination_cell">Москва Внуково (VKO)</td>
+                            <td class="schedule_cell">7:30</td>
+                            <td class="status_cell status_departed"> <small>07:40</small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00755'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">UT643</td>
+                            <td class="company_cell">UTair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>735</td>
+                            <td class="destination_cell">Санкт-Петербург (LED)</td>
+                            <td class="schedule_cell">7:55</td>
+                            <td class="status_cell status_departed"> <small>08:08</small>
+                            </td>
+                            <td class="description_cell">VQ-BJM</td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00800'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">U62921</td>
+                            <td class="company_cell">Ural Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Симферополь(SIP)</td>
+                            <td class="schedule_cell">8:00</td>
+                            <td class="status_cell status_departed"> <small>08:04</small>
+                            </td>
+                            <td class="description_cell">VQ-BLO</td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N00950'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">U6130</td>
+                            <td class="company_cell">Ural Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Домодедово (DME)</td>
+                            <td class="schedule_cell">9:50</td>
+                            <td class="status_cell status_departed"> <small>10:05</small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01210'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">SU1221</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">12:10</td>
+                            <td class="status_cell status_canceled"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N11240'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">UT272</td>
+                            <td class="company_cell">UTair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                            <td class="destination_cell">Самара (KUF)</td>
+                            <td class="schedule_cell">12:40</td>
+                            <td class="status_cell status_departed"> <small>12:48</small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01330'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">U61011</td>
+                            <td class="company_cell">Ural Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>321</td>
+                            <td class="destination_cell">Анталья (AYT)</td>
+                            <td class="schedule_cell">13:30</td>
+                            <td class="status_cell status_departed"> <small>13:37</small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01350'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">UN2585</td>
+                            <td class="company_cell">Transaero Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/TransAero_logo.png" alt="Transaero Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>734</td>
+                            <td class="destination_cell">Sochi (AER)</td>
+                            <td class="schedule_cell">13:50</td>
+                            <td class="status_cell status_departed"> <small>14:22</small>
+                            </td>
+                            <td class="description_cell">EI-CXK</td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01610'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">U62853</td>
+                            <td class="company_cell">Ural Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Ереван (EVN)</td>
+                            <td class="schedule_cell">16:10</td>
+                            <td class="status_cell status_boardingCompleted"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01620'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">Y7925</td>
+                            <td class="company_cell">NordStar</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/nordstar_logo.png" alt="NordStar" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>738</td>
+                            <td class="destination_cell">Белгород (EGO)</td>
+                            <td class="schedule_cell">16:20</td>
+                            <td class="status_cell status_registration"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01710'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">SU1227</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">17:10</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01850'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">J2574</td>
+                            <td class="company_cell">Azerbaijan Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/azerbaijnairlines.png" alt="Azerbaijan Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell">E90</td>
+                            <td class="destination_cell">Баку (GYD)</td>
+                            <td class="schedule_cell">18:50</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01900'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">KV402</td>
+                            <td class="company_cell">KMV Avia</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/kmv_logo.jpg" alt="KMV Avia" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Душанбе (DYU)</td>
+                            <td class="schedule_cell">19:00</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N01907'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">5N518</td>
+                            <td class="company_cell">Nordavia</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/nordavia_logo.png" alt="Nordavia" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>735</td>
+                            <td class="destination_cell">Москва Домодедово (DME)</td>
+                            <td class="schedule_cell">19:07</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N02040'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">SU1225</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">20:40</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N02135'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">S72</td>
+                            <td class="company_cell">S7 Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/S7_logo.png" alt="S7 Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                            <td class="destination_cell">Москва Домодедово (DME)</td>
+                            <td class="schedule_cell">21:35</td>
+                            <td class="status_cell status_schedule"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N02140'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">SU1225</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">21:40</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N02201'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">UN556</td>
+                            <td class="company_cell">Transaero Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/TransAero_logo.png" alt="Transaero Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>738</td>
+                            <td class="destination_cell">Москва Внуково (VKO)</td>
+                            <td class="schedule_cell">22:01</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row departRow" onclick="window.location.href='#N02311'; return false">
+                            <td class="type_cell">
+                                <div class="departures"></div>
+                            </td>
+                            <td class="number_cell">SU1629</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">23:11</td>
+                            <td class="status_cell status_schedule"><small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+                                                
+                    </table>
+                    <table cellspacing="0" class="tableAirport tableDepart">
+                        <tr class="table_row arrivRow " onclick="window.location.href='#N00100'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">SU1222</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">1:00</td>
+                            <td class="status_cell status_canceled"></td>
+                            <td class="description_cell">VP-BZQ</td>
+                        </tr>
+
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N00130'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">LH1464</td>
+                            <td class="company_cell">Lufthansa</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/Lufthansa_logo.svg" alt="Lufthansa" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                            <td class="destination_cell">Франкфурт(FRA)</td>
+                            <td class="schedule_cell">1:30</td>
+                            <td class="status_cell status_landed"> <small>01:21</small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N00205'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">AY161</td>
+                            <td class="company_cell">Finnair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/FIN_logo.png" alt="Finnair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Embraer"></span>190</td>
+                            <td class="destination_cell">Хельсинки(HEL)</td>
+                            <td class="schedule_cell">2:05</td>
+                            <td class="status_cell status_landed"> <small>02:13</small>
+                            </td>
+                            <td class="description_cell">OH-LKP</td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N00400'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">SU1222</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">4:00</td>
+                            <td class="status_cell status_landed"> <small>04:15</small>
+                            </td>
+                            <td class="description_cell">VP-BWD</td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N00710'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">SU1228</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Sukhoi"></span>95</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">7:10</td>
+                            <td class="status_cell status_landed"> <small>07:07</small>
+                            </td>
+                            <td class="description_cell">RA-89041</td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01105'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">SU1220</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">11:05</td>
+                            <td class="status_cell status_delayed"> <small> до 20:00</small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01140'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">S73</td>
+                            <td class="company_cell">S7 Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/S7_logo.png" alt="S7 Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                            <td class="destination_cell">Москва Домодедово (DME)</td>
+                            <td class="schedule_cell">11:40</td>
+                            <td class="status_cell status_landed"> <small>11:26</small>
+                            </td>
+                            <td class="description_cell">VP-BHP</td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01200'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">UT161</td>
+                            <td class="company_cell">UTair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="ATR"></span>75</td>
+                            <td class="destination_cell">Москва Внуково (VKO)</td>
+                            <td class="schedule_cell">12:00</td>
+                            <td class="status_cell status_landed"> <small>12:03</small>
+                            </td>
+                            <td class="description_cell">VQ-BLE</td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01240'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">UN2586</td>
+                            <td class="company_cell">Transaero Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/TransAero_logo.png" alt="Transaero Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>734</td>
+                            <td class="destination_cell">Сочи (AER)</td>
+                            <td class="schedule_cell">12:40</td>
+                            <td class="status_cell status_landed"> <small>12:45</small>
+                            </td>
+                            <td class="description_cell">EI-CXK</td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01430'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">U62922</td>
+                            <td class="company_cell">Ural Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Симферополь (SIP)</td>
+                            <td class="schedule_cell">14:30</td>
+                            <td class="status_cell status_landed"> <small>14:19</small>
+                            </td>
+                            <td class="description_cell">VQ-BLO</td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01640'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">UT271</td>
+                            <td class="company_cell">UTair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                            <td class="destination_cell">Самара (KUF)</td>
+                            <td class="schedule_cell">16:40</td>
+                            <td class="status_cell status_arriveSoon"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01730'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">KV421</td>
+                            <td class="company_cell">KMV Avia</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/kmv_logo.jpg" alt="KMV Avia" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Худжанд (LBD)</td>
+                            <td class="schedule_cell">17:30</td>
+                            <td class="status_cell status_schedule"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N01945'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">SU1224</td>
+                            <td class="company_cell">Аэрофлот</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                            <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                            <td class="schedule_cell">19:45</td>
+                            <td class="status_cell status_schedule"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N02100'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">S71</td>
+                            <td class="company_cell">S7 Airlines</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/S7_logo.png" alt="S7 Airlines" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                            <td class="destination_cell">Москва Домодедово (DME)</td>
+                            <td class="schedule_cell">21:00</td>
+                            <td class="status_cell status_schedule"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N02330'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">UT159</td>
+                            <td class="company_cell">UTair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                            <td class="destination_cell">Москва Внуково (VKO)</td>
+                            <td class="schedule_cell">23:30</td>
+                            <td class="status_cell status_schedule"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr>
+
+                        <tr class="table_row arrivRow" onclick="window.location.href='#N02355'; return false">
+                            <td class="type_cell">
+                                <div class="arrivals"></div>
+                            </td>
+                            <td class="number_cell">UT644</td>
+                            <td class="company_cell">UTair</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                            </td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>735</td>
+                            <td class="destination_cell">Санкт-Петербург (LED)</td>
+                            <td class="schedule_cell">23:55</td>
+                            <td class="status_cell status_schedule"> <small></small>
+                            </td>
+                            <td class="description_cell"></td>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+<!--        modal windows  -->
+    
+        <div id="N00007" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                  <table class="infoModal">
+                        <tr>
+                            <td class="type_cell">Вылет</td>
+                            <td class="number_cell">GH1216</td>
+                            <td class="company_cell">Глобус</td>
+                            <td class="companyLogo_cell"><img src="image/Logo/globus_logo.jpeg" alt="глобус" class="logo"></td>
+                            <td class="aircraft_cell"><span class="Boeing"></span>738</td>
+                            <td class="destination_cell">Москва Домодедово (DME)</td>
+                            <td class="schedule_cell">0:07</td>
+                            <td class="status_cell status_departed"> <small>00:09</small></td>
+                            <td class="description_cell">VP-BQD</td>
+                        </tr>    
+                 </table>
+            </div>
+        </div>  
+        
+        <div id="N00100" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">SU1222</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">1:00</td>
+                        <td class="status_cell status_canceled"></td>
+                        <td class="description_cell">VP-BZQ</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00130" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">LH1464</td>
+                        <td class="company_cell">Lufthansa</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/Lufthansa_logo.svg" alt="Lufthansa" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                        <td class="destination_cell">Франкфурт(FRA)</td>
+                        <td class="schedule_cell">1:30</td>
+                        <td class="status_cell status_landed"> <small>01:21</small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00205" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">AY161</td>
+                        <td class="company_cell">Finnair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/FIN_logo.png" alt="Finnair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Embraer"></span>190</td>
+                        <td class="destination_cell">Хельсинки(HEL)</td>
+                        <td class="schedule_cell">2:05</td>
+                        <td class="status_cell status_landed"> <small>02:13</small>
+                        </td>
+                        <td class="description_cell">OH-LKP</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00330" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">LH1465</td>
+                        <td class="company_cell">Lufthansa</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/Lufthansa_logo.svg" alt="Lufthansa" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                        <td class="destination_cell">Франкфурт(FRA)</td>
+                        <td class="schedule_cell">3:30</td>
+                        <td class="status_cell status_departed"> <small>03:30</small>
+                        </td>
+                        <td class="description_cell">D-AILF</td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00355" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">AY162</td>
+                        <td class="company_cell">Finnair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/FIN_logo.png" alt="Finnair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Embraer"></span>190</td>
+                        <td class="destination_cell">Хельсинки(HEL)</td>
+                        <td class="schedule_cell">3:55</td>
+                        <td class="status_cell status_departed"> <small>03:55</small>
+                        </td>
+                        <td class="description_cell">OH-LKP</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00400" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">SU1222</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">4:00</td>
+                        <td class="status_cell status_landed"> <small>04:15</small>
+                        </td>
+                        <td class="description_cell">VP-BWD</td>
+                    </tr>                    
+                </table>
+            </div>
+        </div>
+
+        <div id="N00505" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">SU1223</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">5:05</td>
+                        <td class="status_cell status_departed"> <small>05:24</small>
+                        </td>
+                        <td class="description_cell">VP-BWD</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00710" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">SU1228</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Sukhoi"></span>95</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">7:10</td>
+                        <td class="status_cell status_landed"> <small>07:07</small>
+                        </td>
+                        <td class="description_cell">RA-89041</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00730" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="type_cell">
+                            <div class="departures"></div>
+                        </td>
+                        <td class="number_cell">UT160</td>
+                        <td class="company_cell">UTair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                        <td class="destination_cell">Москва Внуково (VKO)</td>
+                        <td class="schedule_cell">7:30</td>
+                        <td class="status_cell status_departed"> <small>07:40</small>
+                        </td>
+                        <td class="description_cell"></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00755" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">UT643</td>
+                        <td class="company_cell">UTair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Boeing"></span>735</td>
+                        <td class="destination_cell">Санкт-Петербург (LED)</td>
+                        <td class="schedule_cell">7:55</td>
+                        <td class="status_cell status_departed"> <small>08:08</small>
+                        </td>
+                        <td class="description_cell">VQ-BJM</td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00800" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="type_cell">
+                            <div class="departures"></div>
+                        </td>
+                        <td class="number_cell">U62921</td>
+                        <td class="company_cell">Ural Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Симферополь(SIP)</td>
+                        <td class="schedule_cell">8:00</td>
+                        <td class="status_cell status_departed"> <small>08:04</small>
+                        </td>
+                        <td class="description_cell">VQ-BLO</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N00950" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">U6130</td>
+                        <td class="company_cell">Ural Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Домодедово (DME)</td>
+                        <td class="schedule_cell">9:50</td>
+                        <td class="status_cell status_departed"> <small>10:05</small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01105" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">SU1220</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">11:05</td>
+                        <td class="status_cell status_delayed"> <small> до 20:00</small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01140" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">S73</td>
+                        <td class="company_cell">S7 Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/S7_logo.png" alt="S7 Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                        <td class="destination_cell">Москва Домодедово (DME)</td>
+                        <td class="schedule_cell">11:40</td>
+                        <td class="status_cell status_landed"> <small>11:26</small>
+                        </td>
+                        <td class="description_cell">VP-BHP</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01200" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">UT161</td>
+                        <td class="company_cell">UTair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="ATR"></span>75</td>
+                        <td class="destination_cell">Москва Внуково (VKO)</td>
+                        <td class="schedule_cell">12:00</td>
+                        <td class="status_cell status_landed"> <small>12:03</small>
+                        </td>
+                        <td class="description_cell">VQ-BLE</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01210" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">SU1221</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">12:10</td>
+                        <td class="status_cell status_canceled"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01240" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">UN2586</td>
+                        <td class="company_cell">Transaero Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/TransAero_logo.png" alt="Transaero Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Boeing"></span>734</td>
+                        <td class="destination_cell">Сочи (AER)</td>
+                        <td class="schedule_cell">12:40</td>
+                        <td class="status_cell status_landed"> <small>12:45</small>
+                        </td>
+                        <td class="description_cell">EI-CXK</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N11240" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">UT272</td>
+                        <td class="company_cell">UTair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                        <td class="destination_cell">Самара (KUF)</td>
+                        <td class="schedule_cell">12:40</td>
+                        <td class="status_cell status_departed"> <small>12:48</small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01330" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">U61011</td>
+                        <td class="company_cell">Ural Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>321</td>
+                        <td class="destination_cell">Анталья (AYT)</td>
+                        <td class="schedule_cell">13:30</td>
+                        <td class="status_cell status_departed"> <small>13:37</small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01350" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">UN2585</td>
+                        <td class="company_cell">Transaero Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/TransAero_logo.png" alt="Transaero Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Boeing"></span>734</td>
+                        <td class="destination_cell">Sochi (AER)</td>
+                        <td class="schedule_cell">13:50</td>
+                        <td class="status_cell status_departed"> <small>14:22</small>
+                        </td>
+                        <td class="description_cell">EI-CXK</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01430" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">U62922</td>
+                        <td class="company_cell">Ural Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Симферополь (SIP)</td>
+                        <td class="schedule_cell">14:30</td>
+                        <td class="status_cell status_landed"> <small>14:19</small>
+                        </td>
+                        <td class="description_cell">VQ-BLO</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01610" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">U62853</td>
+                        <td class="company_cell">Ural Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/Ural_Airlines_logo.png" alt="Ural Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Ереван (EVN)</td>
+                        <td class="schedule_cell">16:10</td>
+                        <td class="status_cell status_boardingCompleted"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01620" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">Y7925</td>
+                        <td class="company_cell">NordStar</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/nordstar_logo.png" alt="NordStar" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Boeing"></span>738</td>
+                        <td class="destination_cell">Белгород (EGO)</td>
+                        <td class="schedule_cell">16:20</td>
+                        <td class="status_cell status_registration"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01640" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">UT271</td>
+                        <td class="company_cell">UTair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                        <td class="destination_cell">Самара (KUF)</td>
+                        <td class="schedule_cell">16:40</td>
+                        <td class="status_cell status_arriveSoon"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01710" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">SU1227</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">17:10</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01730" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">KV421</td>
+                        <td class="company_cell">KMV Avia</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/kmv_logo.jpg" alt="KMV Avia" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Худжанд (LBD)</td>
+                        <td class="schedule_cell">17:30</td>
+                        <td class="status_cell status_schedule"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01850" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">J2574</td>
+                        <td class="company_cell">Azerbaijan Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/azerbaijnairlines.png" alt="Azerbaijan Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell">E90</td>
+                        <td class="destination_cell">Баку (GYD)</td>
+                        <td class="schedule_cell">18:50</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01900" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">KV402</td>
+                        <td class="company_cell">KMV Avia</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/kmv_logo.jpg" alt="KMV Avia" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Душанбе (DYU)</td>
+                        <td class="schedule_cell">19:00</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01907" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">5N518</td>
+                        <td class="company_cell">Nordavia</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/nordavia_logo.png" alt="Nordavia" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Boeing"></span>735</td>
+                        <td class="destination_cell">Москва Домодедово (DME)</td>
+                        <td class="schedule_cell">19:07</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N01945" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">SU1224</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">19:45</td>
+                        <td class="status_cell status_schedule"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02040" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">SU1225</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">20:40</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02100" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">S71</td>
+                        <td class="company_cell">S7 Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/S7_logo.png" alt="S7 Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                        <td class="destination_cell">Москва Домодедово (DME)</td>
+                        <td class="schedule_cell">21:00</td>
+                        <td class="status_cell status_schedule"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02135" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">S72</td>
+                        <td class="company_cell">S7 Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/S7_logo.png" alt="S7 Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                        <td class="destination_cell">Москва Домодедово (DME)</td>
+                        <td class="schedule_cell">21:35</td>
+                        <td class="status_cell status_schedule"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02140" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">SU1225</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>319</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">21:40</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02201" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">UN556</td>
+                        <td class="company_cell">Transaero Airlines</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/TransAero_logo.png" alt="Transaero Airlines" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Boeing"></span>738</td>
+                        <td class="destination_cell">Москва Внуково (VKO)</td>
+                        <td class="schedule_cell">22:01</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02311" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Вылет</td>
+                        <td class="number_cell">SU1629</td>
+                        <td class="company_cell">Аэрофлот</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/afl_logo.jpg" alt="Аэрофлот" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Airbus"></span>320</td>
+                        <td class="destination_cell">Москва Шереметьево (SVO)</td>
+                        <td class="schedule_cell">23:11</td>
+                        <td class="status_cell status_schedule"><small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02330" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="number_cell">UT159</td>
+                        <td class="company_cell">UTair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="ATR"></span>7</td>
+                        <td class="destination_cell">Москва Внуково (VKO)</td>
+                        <td class="schedule_cell">23:30</td>
+                        <td class="status_cell status_schedule"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="N02355" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Подробнее о рейсе</h2>
+                <table class="infoModal">
+                    <tr>
+                        <td class="type_cell">Прилет</td>
+                        <td class="type_cell">
+                            <div class="arrivals"></div>
+                        </td>
+                        <td class="number_cell">UT644</td>
+                        <td class="company_cell">UTair</td>
+                        <td class="companyLogo_cell"><img src="image/Logo/UT_Logo.png" alt="UTair" class="logo">
+                        </td>
+                        <td class="aircraft_cell"><span class="Boeing"></span>735</td>
+                        <td class="destination_cell">Санкт-Петербург (LED)</td>
+                        <td class="schedule_cell">23:55</td>
+                        <td class="status_cell status_schedule"> <small></small>
+                        </td>
+                        <td class="description_cell"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>    
+
+        
+
+    </body>
+</html>

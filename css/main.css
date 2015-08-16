@@ -1,0 +1,104 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/*Контейнер прокрутки*/
+
+#container {   
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 40px;
+}
+
+#scrollbox {
+    display: inline-block;
+    overflow: scroll;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+#content {
+    display: inline-block;
+}
+
+/*Размеры Ячеек*/
+.infoModal td {
+    width: 500px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+.table-header>th,
+.table_row>td,
+.table_row>td:hover:after {
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.table-header>th.destination_cell,
+.table_row>td.destination_cell,
+.table_row>td.destination_cell:hover:after {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+
+/*Подсветка колонок/ячеек */
+
+table .table_row:nth-child(odd){
+    background: rgba(62, 62, 62, 0.06);    
+}
+
+.tableAirport .table_row:hover {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+
+.table_row>td:hover {
+    background: rgba(150, 150, 150, 0.28);
+}
+
+.table_row>td:hover:after {
+    content: '';    
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(125, 131, 125, 0.06);
+    z-index: -1;
+}
+.checkboxDepart {
+    position: absolute;
+    top: -30px;
+    left: 90px;
+}
+.checkboxDepart:after {
+    content: '.  Вылет';
+}
+.checkboxArriv:after {
+    content: '.  Прилет';
+} 
+
+.checkboxArriv{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+
+.checkboxDepart:checked  ~ .tableAirport.tableDepart{
+    display: none;
+}
+
+.checkboxArriv:checked  ~ .tableAirport.tableArrive{
+    display: none;
+}

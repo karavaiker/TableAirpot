@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1154px) {
+    .tableContainer .description_cell {
+        display: none;
+    }
+    
+    .table-header>th.type_cell,
+    .table_row>td.type_cell,
+    .table_row>td.type_cell:hover:after {
+        min-width: 50px;
+        max-width: 50px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 998px) {
+    .tableContainer .company_cell {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:900px) {
+      .tableContainer .companyLogo_cell
+      {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Airbus:before {
+        content: "A";
+    }
+    .ATR:before {
+        content: "AT";
+    }
+    .Boeing:before {
+        content: "B";
+    }
+    .Embraer:before {
+        content: "E";
+    }
+    .Sukhoi:before {
+        content: "SU";
+    }
+    .table-header>th.aircraft_cell,
+    .table_row>td.aircraft_cell,
+    .table_row>td.aircraft_cell:hover:after {
+        min-width: 70px;
+        max-width: 70px;
+    }
+        
+    .tableContainer .table-header {
+        font-size: 0.75em;
+    }
+    
+    #container {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .table-header>th,
+    .table_row>td,
+    .table_row>td:hover:after {
+        min-width: 100px;
+        max-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .tableContainer .aircraft_cell {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .table-header>th.schedule_cell,
+    .table_row>td.schedule_cell,
+    .table_row>td.schedule_cell:hover:after {
+        min-width: 75px;
+        max-width: 75px;
+    }
+    
+    .table-header>th.number_cell,
+    .table_row>td.number_cell,
+    .table_row>td.number_cell:hover:after {
+        min-width: 65px;
+        max-width: 65px;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .tableContainer {
+        font-size: 0.8em;
+    }
+    
+    .table-header>th,
+    .table_row>td,
+    .table_row>td:hover:after {
+        min-width: 80px;
+        max-width: 80px;
+    }
+        #container {
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .tableContainer .type_cell {
+        display: none;
+    }
+}
+

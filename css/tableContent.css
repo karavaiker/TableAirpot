@@ -1,0 +1,116 @@
+@import "http://webfonts.ru/import/dited.css";
+@import "http://webfonts.ru/import/lato.css";
+@import "http://webfonts.ru/import/ubuntu.css";
+
+.table-header {    
+    font-family: 'Lato';
+}
+
+.table_row {
+    font-weight: 400;    
+    font-family: 'Ubuntu Mono';
+}
+
+.table_row .schedule_cell {
+    text-align: center;
+    font-weight: bold;    
+}
+
+.table_row .status_cell {
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: 'Dited';
+}
+
+.arrivals, .departures {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;    
+}
+.arrivals {
+    background: url(aeroplaneArrival.png) center 0 no-repeat;
+}
+
+.departures {
+    background: url(aeroplaneDepart.png) center 0 no-repeat;
+}
+/*Description Flight status*/
+
+.status_registration:before {
+    color: limegreen;
+    content: 'Регистрация';
+}
+
+.status_waitingLanding:before {
+    color: #fa7300;
+    content: 'Ожидание посадки';
+}
+
+.status_boardingCompleted:before {
+    color: #fa004d;
+    content: 'Посадка закончена';
+}
+
+.status_departed:before {
+    content: 'Вылетел ';    
+}
+
+.status_schedule:before {
+    color: #606060;
+    content: 'По расписанию';
+}
+
+.status_arriveSoon:before {
+    color: #00cafa;
+    content: 'Летит';
+}
+
+.status_landed {
+    color: #2a84de
+}
+
+.status_landed:before {
+    content: 'Приземлился';
+}
+
+.status_delayed:before {
+    content: 'Задерживается';    
+}
+
+.status_canceled:before {
+    color: #fa0000;
+    content: 'Отменен';
+}
+
+.status_departed {
+    color:#ed6f65;
+}
+
+.status_delayed {
+    color: #6c00ea;
+}
+
+/*lable Aircraft*/
+
+.Airbus:before {
+    content: "Airbus ";
+}
+
+.ATR:before {
+    content: "ATR-";
+}
+
+.Boeing:before {
+    content: "Boeing ";
+}
+
+.Embraer:before {
+    content: "Embraer ";
+}
+
+.Sukhoi:before {
+    content: "Sukhoi Superjet ";
+}
